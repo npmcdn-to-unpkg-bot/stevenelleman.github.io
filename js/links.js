@@ -1,3 +1,12 @@
+var link_height = $("link_type").height();
+$('link_type').css('width', link_height+'px');
+
+$(function() {
+	var type = $('link_type');
+	var height = type.height();
+	type.css('width', height);
+});
+
 $(document).ready(function(){
 	$.each(photo_links, function(index, element){
 
@@ -15,7 +24,8 @@ $(document).ready(function(){
 		var date = $("<div/>").addClass("date_loc").text(link_date);
 		var type = $("<div/>").addClass("link_type").attr("title", link_type + " photos");
 		var img = $("<img/>").attr("src", final_address);
-		var type_img = $("<img/>").attr("src", "http://stevenelleman.github.io/images/icons/type_icons/photo_"+link_type+"_white.png");
+		var type_img = $("<img/>").addClass("type_img").attr("src", "http://stevenelleman.github.io/images/icons/type_icons/photo_"+link_type+"_white.png");
+
 
 
 		/* Combine Elements */
@@ -55,3 +65,5 @@ $(document).ready(function() {
 		$('.link_img').css("width", "19.5%");
 	}
 });
+
+
