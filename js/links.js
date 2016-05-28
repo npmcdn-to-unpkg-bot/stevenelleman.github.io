@@ -7,16 +7,19 @@ $(document).ready(function(){
 		var link_date = $(element)[2];
 		var link_type = $(element)[3];
 		var final_address = "http://stevenelleman.github.io/images/image_links/photo/"+link_address+".jpg";
-		var final_type = "." + link_type + "_photo";
+		var final_type = link_type + "_photo";
 
 		/* Make Link Elements */
 		var container = $("<div/>").addClass("link_img");
 		var name = $("<div/>").addClass("link_name").text(link_name);
 		var date = $("<div/>").addClass("date_loc").text(link_date);
-		var type = $("<div/>").addClass(final_type).attr("title", link_type);
+		var type = $("<div/>").addClass("link_type").attr("title", link_type + " photos");
 		var img = $("<img/>").attr("src", final_address);
+		var type_img = $("<img/>").attr("src", "http://stevenelleman.github.io/images/icons/type_icons/photo_"+link_type+"_white.png");
+
 
 		/* Combine Elements */
+		type.append(type_img);
 		container.append(img);
 		container.append(name);
 		container.append(date);
