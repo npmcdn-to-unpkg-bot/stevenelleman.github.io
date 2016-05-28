@@ -1,7 +1,11 @@
 /* [address_title, title, date/location, type]*/
 var photo_links=[
-	["nature_yosemite", "Yosemite", "Spring 2016", "nature"],
-	["nature_deathvalley", "Death Valley", "Spring 2016", "nature"],
+	["human_basmafam", "Day in SF", "26-5-2016 | SF, CA", "human"],
+	["nature_yosemite", "Yosemite", "19-3-2016 | CA", "nature"],
+	["nature_deathvalley", "Death Valley", "21-3-2016 | CA", "nature"],
+	
+
+
 	["nature_sunsets", "Berkeley Sunsets", "Fall 2015 | Marin County, CA", "nature"],
 	["nature_marin", "Marin Headlands", "4-6-2015 | Marin County, CA", "nature"],
 	["nature_bot", "SF Botanical Gardens", "17-5-2015 | SF", "nature"],
