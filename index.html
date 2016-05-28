@@ -9,12 +9,32 @@
 	<link rel="stylesheet" type="text/css" href="/css/gallery_format.css">
 	<link rel="stylesheet" type="text/css" href="/css/image_link.css">
 	<link rel="stylesheet" type="text/css" href="/css/showcase.css">
-	<script src="jquery-1.11.3.min.js"></script>
+	
 
 
 <style>
 </style>
+<script src="jquery-1.11.3.min.js"></script>
 <script>
+/* [address_title, title, date/location, type]*/
+var photo_links=[
+	["nature_yosemite", "Yosemite", "Spring 2016", "nature"],
+	["nature_death", "Death Valley", "Spring 2016", "naturee"]
+];
+
+$(document).ready(function(){
+	for i in photo_links {
+		$(".links").append(
+			'<div class="link_img">
+		<img src="http://stevenelleman.github.io/images/image_links/photo/'+i[0]+'.jpg>
+		<div id="name_">'+i[1]+'</div>
+		<div class="date_loc">'+i[2]+'</div>
+		<div class="'+i[3]+'_photo"></div>
+		</div>'
+			)
+	};
+});
+
 </script>
 </head>
 
@@ -86,27 +106,7 @@
 	</object>-->
 
 
-<script>
-/* [address_title, title, date/location, type]*/
-photo_links=[
-	["nature_yosemite", "Yosemite", "Spring 2016", "nature"],
-	["nature_death", "Death Valley", "Spring 2016", "naturee"]
-];
 
-$(document).ready(function(){
-	for i in photo_links {
-		$(".links").append(
-			'<div class="link_img">
-		<img src="http://stevenelleman.github.io/images/image_links/photo/'+i[0]+'.jpg>
-		<div id="name_">'+i[1]+'</div>
-		<div class="date_loc">'+i[2]+'</div>
-		<div class="'+i[3]+'_photo"></div>
-		</div>'
-			)
-	};
-});
-
-</script>
 
 <div class="links">	
 		
