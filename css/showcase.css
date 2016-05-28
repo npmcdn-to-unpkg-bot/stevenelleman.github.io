@@ -1,0 +1,38 @@
+.arrow_left {
+	width: 1em;
+	height: 1em;
+	background-image: url(/pw2/images/icons/arrow_left.png);
+
+}
+
+.arrow_right {
+	width: 1em;
+	height: 1em;
+	background-image: url(/pw2/images/icons/arrow_right.png);
+
+}
+
+.arrow_down {
+	width: 1em;
+	height: 1em;
+	background-image: url(/pw2/images/icons/arrow_down.png);
+}
+
+.galleries {
+
+}
+
+.signature {
+
+}
+
+.showcase {
+	width: 100%;
+
+}
+
+.all_showcase {
+	position: absolute;
+	float: left;
+	width: 600%;
+}
