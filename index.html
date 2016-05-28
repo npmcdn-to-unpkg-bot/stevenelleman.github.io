@@ -10,64 +10,12 @@
 	<link rel="stylesheet" type="text/css" href="css/image_link.css">
 	<link rel="stylesheet" type="text/css" href="css/showcase.css">
 	<script type="text/javascript" src="fields/data.js" ></script>
+
 	<!--<script type="text/javascript" src="js/image_link.js" ></script>-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/links.js" ></script>
 <script>
-$(document).ready(function(){
-	$.each(photo_links, function(index, element){
 
-		/* Process fields */
-		var link_address = $(element)[0];
-		var link_name = $(element)[1];
-		var link_date = $(element)[2];
-		var link_type = $(element)[3];
-		var final_address = "http://stevenelleman.github.io/images/image_links/photo/"+link_address+".jpg";
-		var final_type = "." + link_type + "_photo";
-
-		/* Make Link Elements */
-		var container = $("<div/>").addClass("link_img");
-		var name = $("<div/>").addClass("link_name").text(link_name);
-		var date = $("<div/>").addClass("date_loc").text(link_date);
-		var type = $("<div/>").addClass(final_type);
-		var img = $("<img/>").attr("src", final_address);
-
-		/* Combine Elements */
-		container.append(img);
-		container.append(name);
-		container.append(date);
-		container.append(type);
-		$(".links").append(container);
-	});
-});
-
-$(window).on('resize', function() {
-	if ($(window).width()  < 600) {
-		$('.link_img').css("width", "99.5%");
-	} else if ($(window).width()  < 900) {
-		$('.link_img').css("width", "49.5%");
-		$('#commission').css("display", "block");
-	} else if ($(window).width() < 1200) {
-		$('.link_img').css("width", "32.7%");
-		$('#commission').css("display", "none");
-	} else {
-		$('.link_img').css("width", "24.8%");
-		$('#commission').css("display", "block");
-		
-	}
-});
-
-$(document).ready(function() {
-	if ($(window).width()  < 600) {
-		$('.link_img').css("width", "99.5%");
-	} else if ($(window).width()  < 900) {
-		$('.link_img').css("width", "49.5%");
-	} else if ($(window).width() < 1200) {
-		$('.link_img').css("width", "32.7%");
-		$('#commission').css("display", "none");
-	} else {
-		$('.link_img').css("width", "24.8%");
-	}
-});
 
 </script>
 </head>
