@@ -24,7 +24,10 @@
 }
 
 .signature {
-
+	top:0;
+	width:100%;
+	background-color: black;
+	height:10em;
 }
 
 .showcase_container {
