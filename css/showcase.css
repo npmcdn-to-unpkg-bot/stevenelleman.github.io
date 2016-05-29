@@ -1,15 +1,16 @@
+
+
 .arrow_left {
-	width: 1em;
-	height: 1em;
-	background-image: url(/pw2/images/icons/arrow_left.png);
+	position: absolute;
+	left:0;
+	height: 0;
 
 }
 
 .arrow_right {
-	width: 1em;
-	height: 1em;
-	background-image: url(/pw2/images/icons/arrow_right.png);
-
+	position: absolute;
+	right:0;
+	height:0;
 }
 
 .arrow_down {
@@ -26,8 +27,19 @@
 
 }
 
-.showcase {
-	width: 100%;
+.showcase_container {
+	display: block;
+    height: 1200px;
+    left: -8px;
+    top: 70px;
+    margin: auto;
+    background-position: 50% 50%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    clear: both;
+    margin-bottom: 2px;
 
 }
 
