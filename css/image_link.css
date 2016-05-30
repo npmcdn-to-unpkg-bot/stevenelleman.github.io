@@ -27,6 +27,8 @@
    }
 
 .links {
+	border-top: solid;
+    border-color: white;
 	white-space: nowrap;
 	font-size: 0;
 	margin-left: -8px;

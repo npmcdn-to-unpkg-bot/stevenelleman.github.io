@@ -28,7 +28,7 @@
 <div class="signature"></div>
 
 <div class="showcase_container">
-	<div class="all_showcases">
+	<div class="all_showcases" id="allShowcases">
 		
 		<div class="whitespace"></div>
 
@@ -91,15 +91,19 @@
 		</div>
 	</div>
 
-	<div class="arrow_left" id="leftArrow">
+	<div class="arrow_left" id="leftArrow" onclick="leftSlide() showcaseClick()">
 		<img src="images/icons/arrows/arrow_down_white.png">
 	</div>
 	
-	<div class="arrow_right" id="rightArrow">
+	<div class="arrow_right" id="rightArrow" onclick="rightSlide() showcaseClick()">
 		<img src="images/icons/arrows/arrow_down_white.png">
 	</div>
 
-	<div class="arrow_down" id="downArrow">
+	<div class="arrow_down" id="downArrow" onclick="openLinks()">
+		<img src="images/icons/arrows/arrow_down_white.png">
+	</div>
+
+	<div class="arrow_up" id="upArrow" onclick="closeLinks()">
 		<img src="images/icons/arrows/arrow_down_white.png">
 	</div>
 
@@ -108,14 +112,7 @@
 <div class="content_page">
 
 <div class="galleries">
-	<!-- <object data="html/photo.html">
-	
-	</object>-->
-
-
-
-
-<div class="links">	
+<div class="links" id="link_box">	
 </div>
 </div>
 <div class="footer_container">
@@ -152,8 +149,7 @@
 </a>
 </div>
 </div>
-<div class="copyright"> 
-© 2015 Icons and Site Designed by Steven Elleman
+<div class="copyright">&copy; 2016 Icons and Site Designed by Steven Elleman
 </div>
 </div>
 </body>

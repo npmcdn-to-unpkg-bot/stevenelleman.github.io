@@ -6,11 +6,11 @@ body {
 	position: absolute;
 	left:2%;
 	top:50%;
-	opacity: 0.6;
+	opacity: 0.8;
 }
 
 .arrow_left:hover {
-	opacity: 0.8;
+	opacity: 1;
 }
 
 /*.whitespace {
@@ -31,11 +31,11 @@ body {
 	position: absolute;
 	right:2%;
 	top:50%;
-	opacity: 0.6;
+	opacity: 0.8;
 }
 
 .arrow_right:hover {
-	opacity: 0.8;
+	opacity: 1;
 }
 
 .arrow_right img {
@@ -59,9 +59,30 @@ body {
 
 .arrow_down img {
 	height: 50px;
+	
 }
 
 .arrow_down:hover {
+	opacity: 1;
+}
+
+.arrow_up {
+	position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0%;
+    opacity: 0.8;
+    display: none;
+}
+
+.arrow_up img {
+	height: 50px;
+	-ms-transform: rotate(-180deg); /* IE 9 */
+    -webkit-transform: rotate(-180deg); /* Safari */
+    transform: rotate(-180deg);
+}
+
+.arrow_up:hover {
 	opacity: 1;
 }
 
@@ -85,7 +106,7 @@ body {
 */
 .showcase_container {
 	width: 100%;
-	height:1000px;
+	height:1050px;
 	position: relative;
 	overflow: hidden;
 }
@@ -99,10 +120,10 @@ body {
 }
 
 .showcase {
-	height: 1000px;
+	height: 1050px;
     margin-left: -4px;
     width: 16.66666666666%;
-    background-position: 50% 18%;
+    background-position: 50% 25%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -114,7 +135,7 @@ body {
 
 .all_showcases {
 	position: absolute;
-    height: 1000px;
+    height: 1050px;
     width: 600%;
     overflow: hidden;
     white-space: nowrap;
@@ -123,4 +144,20 @@ body {
     border-bottom: solid;
     border-width: 2.8px;
     border-color: white;
+}
+
+#downArrow {
+
+}
+
+#leftArrow {
+
+}
+
+#rightArrow {
+
+}
+
+#allShowcases {
+
 }
