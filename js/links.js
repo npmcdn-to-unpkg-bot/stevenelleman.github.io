@@ -41,11 +41,11 @@ $(document).ready(function(){
 $(window).on('resize', function() {
 	if ($(window).width()  < 600) {
 		$('.link_img').css("width", "99.5%");
-	} else if ($(window).width()  < 900) {
+	} else if ($(window).width()  < 1000) {
 		$('.link_img').css("width", "49.4%");
-	} else if ($(window).width() < 1200) {
+	} else if ($(window).width() < 1400) {
 		$('.link_img').css("width", "32.4%");
-	} else if ($(window).width() < 1600) {
+	} else if ($(window).width() < 1800) {
 		$('.link_img').css("width", "24.4%");
 	} else {
 		$('.link_img').css("width", "19.5%");
@@ -55,15 +55,69 @@ $(window).on('resize', function() {
 $(document).ready(function() {
 	if ($(window).width()  < 600) {
 		$('.link_img').css("width", "99.5%");
-	} else if ($(window).width()  < 900) {
+	} else if ($(window).width()  < 1000) {
 		$('.link_img').css("width", "49.4%");
-	} else if ($(window).width() < 1200) {
+	} else if ($(window).width() < 1400) {
 		$('.link_img').css("width", "32.4%");
-	} else if ($(window).width() < 1600) {
+	} else if ($(window).width() < 1800) {
 		$('.link_img').css("width", "24.4%");
 	} else {
 		$('.link_img').css("width", "19.5%");
 	}
 });
+
+/* arrow */
+
+var window_width = $(window).width();
+/*
+$(document).ready(function(){
+	$( '#leftArrow' ).click(function(){
+		$( 'showcase' ).animate({
+			left: '+=' + window_width +'px'
+		},500);
+		return false;
+	});
+});
+
+$(document).ready(function({
+	$("#leftArrow").click(function(){
+	  $("#current").animate({scrollRight : "+=1000px"});
+	});
+});*/
+
+$("#rightArrow").click(function(){
+	var left = $("all_showcases").style.left;
+	if (left === "0%") {
+		$("all_showcases").css("left", "-100%");
+	} else if (left === "-100%") {
+		$("all_showcases").css("left", "-200%");
+	} else if (left === "-200%") {
+		$("all_showcases").css("left", "-300%");
+	} else if (left === "-300%") {
+		$("all_showcases").css("left", "-400%");
+	} else if (left === "-400%") {
+		$("all_showcases").css("left", "-500%");
+	}
+});
+
+$("#leftArrow").click(function(){
+  $("all_showcases").css("left", "+=100%");
+});
+
+
+
+
+$(document).ready(function(){
+	$( '#downArrow' ).click(function() {
+	  $( 'links' ).css('display', 'block');
+	});
+});
+
+$(document).ready(function(){
+	$( '#upArrow' ).click(function() {
+	  $( 'links' ).css('display', 'none');
+	});
+});
+
 
 

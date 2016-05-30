@@ -4,38 +4,76 @@ body {
 
 .arrow_left {
 	position: absolute;
+	left:2%;
+	top:50%;
+	opacity: 0.6;
 }
+
+.arrow_left:hover {
+	opacity: 0.8;
+}
+
+/*.whitespace {
+	height:1000px;
+	width:4px;
+}*/
 
 .arrow_left img {
 	width:50px;
-	left:0;
-	filter: invert(100%);
-	vertical-align:middle;
+	/*-webkit-filter: invert(1);
+	filter: invert(1);*/
+	-ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari */
+    transform: rotate(90deg);
 }
 
 .arrow_right {
 	position: absolute;
+	right:2%;
+	top:50%;
+	opacity: 0.6;
+}
+
+.arrow_right:hover {
+	opacity: 0.8;
 }
 
 .arrow_right img {
 	width:50px;
 	right:0;
-	filter: invert(100%);
-	vertical-align:middle;
+	/*-webkit-filter: invert(1);
+	filter: invert(1);*/
+	-ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Safari */
+    transform: rotate(-90deg);
+
 }
 
 .arrow_down {
 	position: absolute;
-	width: 100%;
-	height:2em;
-	float: ;
-	clear: both;
+    width: 100%;
+    text-align: center;
+    bottom: 0%;
+    opacity: 0.8;
+}
+
+.arrow_down img {
+	height: 50px;
+}
+
+.arrow_down:hover {
+	opacity: 1;
 }
 
 .galleries {
 
 }
 
+.current {
+	margin-left: 0px !important;
+}
+
+/*
 .current {
 	width: 100%;
 	display: block;
@@ -44,11 +82,15 @@ body {
 .close {
 	display: none;
 }
+*/
+.showcase_container {
+	width: 100%;
+	height:1000px;
+	position: relative;
+	overflow: hidden;
+}
 
 .signature {
-	/*top:-10px;
-	left:-10px;
-	width:105%;*/
 	background-color: black;
 	height:30px;
 	border-bottom: solid;
@@ -57,8 +99,9 @@ body {
 }
 
 .showcase {
-    height: 1100px;
-    margin: auto;
+	height: 1000px;
+    margin-left: -4px;
+    width: 16.66666666666%;
     background-position: 50% 18%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -66,13 +109,18 @@ body {
     background-size: cover;
     clear: both;
     margin-bottom: 2px;
-
+    display: inline-block;
 }
 
-.all_showcase {
-	top: 30px;
-	display: inline-block;
+.all_showcases {
 	position: absolute;
-	overflow: scroll;
-	/*float: left;*/
+    height: 1000px;
+    width: 600%;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    float: left;
+    border-bottom: solid;
+    border-width: 2.8px;
+    border-color: white;
 }

@@ -31,6 +31,12 @@
 	font-size: 0;
 	margin-left: -8px;
     margin-right: -31px;
+    display: none;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
 }
 
 .link_img {
