@@ -3,7 +3,7 @@
     font-family: "Ailerons";
     color: white;
     background-color: rgba(0,0,0, 0.5);
-    font-size: 18px;
+        font-size: 20px;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -17,9 +17,9 @@
 .date_loc {
     width: 100%;
     position: absolute;
-    bottom: 5px;
+    bottom: 11px;
     height: 1em;
-    font-size: 13px;
+    font-size: 14px;
     font-family: "Elegant-Lux";
     color: white;
     text-align: center;
@@ -27,6 +27,7 @@
    }
 
 .links {
+	background-color: black;
 	border-top: solid;
     border-color: white;
 	white-space: nowrap;

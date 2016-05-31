@@ -2,13 +2,26 @@ body {
 	margin: 0;
 }
 
+.section_links {
+	display: inline-block;
+    float: left;
+    z-index: 100;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+}
+
 .title_container {
-	font-family: "Ailerons";
-	color: white;
-	font-size: 6em;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-	vertical-align: center;
-	text-align: middle;
+	font-family: "Ailerons"; /*Mohave, Moon, Ailerons*/
+    color: white;
+    padding: 8px;
+    font-size: 1.5em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    vertical-align: center;
+    text-align: middle;
+    display: inline-block;
+    border: solid;
+    border-width: 3px;
 }
 
 .arrow_left {
@@ -31,9 +44,7 @@ body {
 	width:50px;
 	/*-webkit-filter: invert(1);
 	filter: invert(1);*/
-	-ms-transform: rotate(90deg); /* IE 9 */
-    -webkit-transform: rotate(90deg); /* Safari */
-    transform: rotate(90deg);
+
 }
 
 .arrow_right {
@@ -52,9 +63,9 @@ body {
 	right:0;
 	/*-webkit-filter: invert(1);
 	filter: invert(1);*/
-	-ms-transform: rotate(-90deg); /* IE 9 */
-    -webkit-transform: rotate(-90deg); /* Safari */
-    transform: rotate(-90deg);
+	-ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Safari */
+    transform: rotate(180deg);
 
 }
 
@@ -69,6 +80,9 @@ body {
 
 .arrow_down img {
 	height: 30px;
+	-ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Safari */
+    transform: rotate(-90deg);
 	
 }
 
@@ -86,19 +100,22 @@ body {
 }
 
 .arrow_up {
-	position: absolute;
+	position: fixed;
+	z-index: 10;
     width: 100%;
     text-align: center;
     bottom: 0%;
     opacity: 0.8;
     display: none;
+    background-color: black;
 }
 
 .arrow_up img {
-	height: 50px;
-	-ms-transform: rotate(-180deg); /* IE 9 */
-    -webkit-transform: rotate(-180deg); /* Safari */
-    transform: rotate(-180deg);
+	height: 30px;
+	-ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari */
+    transform: rotate(90deg);
+	
 }
 
 .arrow_up:hover {

@@ -69,7 +69,21 @@ $(document).ready(function() {
 /* arrow */
 
 var window_width = $(window).width();
+/*
+$(document).ready(function(){
+	$( '#leftArrow' ).click(function(){
+		$( 'showcase' ).animate({
+			left: '+=' + window_width +'px'
+		},500);
+		return false;
+	});
+});
 
+$(document).ready(function({
+	$("#leftArrow").click(function(){
+	  $("#current").animate({scrollRight : "+=1000px"});
+	});
+});*/
 $(document).ready(function() {
 	$("#downArrow").on("click", function() {
 		$("links").css('display', 'block');
@@ -89,6 +103,65 @@ function closeLinks() {
 	document.getElementById('downArrow').style.display = 'block';
 	document.getElementById('upArrow').style.display = 'none';
 }
+
+/*
+function leftSlide() {
+	var left = document.getElementById('allShowcases').style.left;
+	document.getElementById('allShowcases').style.left = left + "-100%";
+
+	if (left < -450) {
+		document.getElementById('leftArrow').style.display = "none";
+	}
+}*/
+
+/*
+$(document).ready(function(){
+	var left = parseInt(document.getElementById('allShowcases').style.left);
+	if (left < -450) {
+		document.getElementById('leftArrow').style.display = "none";
+	} else if (-50 < left < 50) {
+		document.getElementById('rightArrow').style.display = "none";
+	} else {
+		document.getElementById('leftArrow').style.display = "block";
+		document.getElementById('rightArrow').style.display = "block";
+	}
+});
+
+function showcaseClick() {
+	var left = parseInt(document.getElementById('allShowcases').style.left);
+	if (left < -450) {
+		document.getElementById('leftArrow').style.display = "none";
+	} else if (-50 < left < 50) {
+		document.getElementById('rightArrow').style.display = "none";
+	} else {
+		document.getElementById('leftArrow').style.display = "block";
+		document.getElementById('rightArrow').style.display = "block";
+	}	
+}*/
+
+/*
+$(document).ready(function(){
+	$('#rightArrow').click(function(){
+		var left = getCssProperty("all_showcases", "left");
+		if (left === "0" || left === "0%") {
+			$("all_showcases").css("left", "-100%");
+		} else if (left === "-100%") {
+			$("all_showcases").css("left", "-200%");
+		} else if (left === "-200%") {
+			$("all_showcases").css("left", "-300%");
+		} else if (left === "-300%") {
+			$("all_showcases").css("left", "-400%");
+		} else if (left === "-400%") {
+			$("all_showcases").css("left", "-500%");
+		}
+	});
+});
+*/
+/*
+$("#leftArrow").click(function(){
+  $("all_showcases").css("left", "+=100%");
+});
+*/
 
 
 
@@ -160,4 +233,11 @@ $(document).ready(function(){
 		}
 	});
 });
+/*
+$(document).ready(function(){
+	$( '#rightArrow' ).click(function() {
+	  $( '#allShowcases' ).css('left', '+=100.00000000000000');
+	});
+});
 
+*/
