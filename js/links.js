@@ -174,9 +174,9 @@ $(document).ready(function(){
 		var left = parseInt($('#allShowcases')[0].style.left)/100;
 		console.log(left);
 		if (isNaN(left)) {
-			$( '#allShowcases' ).css('left', '-500%');
+			$( '#allShowcases' ).css('left', '-1000%');
 		} else if (-0.5 < left && left < 0.5) {
-			$( '#allShowcases' ).css('left', '-500%');
+			$( '#allShowcases' ).css('left', '-1000%');
 		} else if ( -1.5 < left && left < -0.5) {
 			$( '#allShowcases' ).css('left', '0%');
 		} else if ( -2.5 < left && left < -1.5) {
@@ -187,6 +187,16 @@ $(document).ready(function(){
 			$( '#allShowcases' ).css('left', '-300%');
 		} else if ( -5.5 < left && left < -4.5) {
 			$( '#allShowcases' ).css('left', '-400%');
+		} else if ( -6.5 < left && left < -5.5) {
+			$( '#allShowcases' ).css('left', '-500%');
+		} else if ( -7.5 < left && left < -6.5) {
+			$( '#allShowcases' ).css('left', '-600%');
+		} else if ( -8.5 < left && left < -7.5) {
+			$( '#allShowcases' ).css('left', '-700%');
+		} else if ( -9.5 < left && left < -8.5) {
+			$( '#allShowcases' ).css('left', '-800%');
+		} else if ( -10.5 < left && left < -9.5) {
+			$( '#allShowcases' ).css('left', '-900%');
 		}
 	});
 
@@ -196,7 +206,6 @@ $(document).ready(function(){
 		if (isNaN(left)) {
 			$( '#allShowcases' ).css('left', '0%');
 		}
-
 		if (isNaN(left)) {
 			$( '#allShowcases' ).css('left', '-100%');
 		} else if (-0.5 < left && left < 0.5) {
@@ -210,9 +219,18 @@ $(document).ready(function(){
 		} else if ( -4.5 < left && left < -3.5) {
 			$( '#allShowcases' ).css('left', '-500%');
 		} else if ( -5.5 < left && left < -4.5) {
+			$( '#allShowcases' ).css('left', '-600%');
+		} else if (-6.5 < left && left < -5.5) {
+			$( '#allShowcases' ).css('left', '-700%');
+		} else if ( -7.5 < left && left < -6.5) {
+			$( '#allShowcases' ).css('left', '-800%');
+		} else if ( -8.5 < left && left < -7.5) {
+			$( '#allShowcases' ).css('left', '-900%');
+		} else if ( -9.5 < left && left < -8.5) {
+			$( '#allShowcases' ).css('left', '-1000%');
+		} else if ( -10.5 < left && left < -9.5) {
 			$( '#allShowcases' ).css('left', '0%');
 		}
-		
 	});
 });
 /*
