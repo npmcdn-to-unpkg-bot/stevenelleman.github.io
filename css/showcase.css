@@ -2,6 +2,38 @@ body {
 	margin: 0;
 }
 
+.signature {
+	position: absolute;
+	top:0.64em;
+	color: white;
+	font-family: "Ailerons";
+	font-size: 1.5em;
+	z-index: 10;
+	left: 1em;
+	opacity: 1.2;
+}
+
+.logo {
+ z-index:100;
+ position: absolute;
+ left: 1em;
+ top: 1em;
+}
+
+.logo img {
+	height: 200px;
+}
+
+.link_band {
+	width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    height: 3.5em;
+    position: absolute;
+    z-index: 10;
+    top: 0.64em;
+}
+
 .section_links {
 	display: inline-block;
     float: left;
@@ -9,6 +41,8 @@ body {
     position: absolute;
     right: 1em;
     top: 1em;
+    
+    cursor: pointer;
 }
 
 .title_container {
@@ -20,8 +54,23 @@ body {
     vertical-align: center;
     text-align: middle;
     display: inline-block;
-    border: solid;
+    opacity:0.7;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.title_container:hover {
+	opacity:0.9;
+}
+
+.current {
+	/*border: solid;
     border-width: 3px;
+    border-color: white;
+	*/
+	box-shadow: 0 0 0 2px white inset;
+	opacity: 1 !important;
 }
 
 .arrow_left {
@@ -147,17 +196,11 @@ body {
 	overflow: hidden;
 }
 
-.signature {
-	background-color: black;
-	height:30px;
-	border-bottom: solid;
-	border-color:white;
-	border-width: 2px;
-}
+
 
 .showcase {
 	height: 1050px;
-    margin-left: -4px;
+    margin-left: -0.2em;
     width: 9.090909090909%;
     background-position: 50% 25%;
     -webkit-background-size: cover;
@@ -185,6 +228,19 @@ body {
     -moz-transition: all 0.5s linear;
     -ms-transition: all 0.5s linear;
     -o-transition: all 0.5s linear;
+}
+
+.showcase_title {
+	top: 0.64em;
+	position: absolute;
+	font-family: "Ailerons";
+	font-size: 5em;
+	color: white;
+	display: none;
+}
+
+.content_page {
+	display: none;
 }
 
 #downArrow {

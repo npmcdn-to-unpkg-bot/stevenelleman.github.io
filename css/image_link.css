@@ -27,13 +27,12 @@
    }
 
 .links {
-	background-color: black;
 	border-top: solid;
     border-color: white;
 	white-space: nowrap;
 	font-size: 0;
-	margin-left: -8px;
-    margin-right: -31px;
+	/*margin-left: -8px;
+    margin-right: -31px;*/
     display: none;
     transition: all 0.3s linear;
     -webkit-transition: all 0.3s linear;
@@ -104,3 +103,42 @@
     float: left;
     bottom: 0%;
 }
+
+/* Blog links */
+/*
+.blog_container {
+	float: left;
+    position: relative;
+    border-left: 3px solid white;
+    width: 33%;
+    border-bottom: 3px solid white;
+}
+
+.blog_name {
+	font-family: "Mohave";
+    color: white;
+    background-color: rgba(0,0,0, 0.5);
+    font-size: 25px;
+    white-space: normal;
+    position: absolute;
+    bottom: 40%;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+
+.blog_container img {
+    width: 100%;
+}
+
+.blog_arrow {
+
+}
+
+.blog_arrow img {
+
+}
+/* Sculpture/Drawing links */
+
+
+

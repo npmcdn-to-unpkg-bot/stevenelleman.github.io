@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="css/blog.css">
 	<link rel="stylesheet" type="text/css" href="css/blog_format.css">
-	<link rel="stylesheet" type="text/css" href="css/drawing.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
 	<link rel="stylesheet" type="text/css" href="css/gallery_format.css">
 	<link rel="stylesheet" type="text/css" href="css/image_link.css">
 	<link rel="stylesheet" type="text/css" href="css/showcase.css">
 	<link rel="stylesheet" type="text/css" href="css/font.css">
+	<link rel="stylesheet" type="text/css" href="css/about_link.css">
+	<link rel="stylesheet" type="text/css" href="css/blog_link.css">
 	
 	<!--<script type="text/javascript" src="js/image_link.js" ></script>-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-	<script type="text/javascript" src="js/links.js" ></script>
+	<script src="http://imagesloaded.desandro.com/imagesloaded.pkgd.js"></script>
+	<script type="text/javascript" src="js/showcase.js" ></script>
+	<script type="text/javascript" src="js/masonry.pkgd.min.js" ></script>
 	<script type="text/javascript" src="fields/data.js" ></script>
+	<script type="text/javascript" src="js/links.js" ></script>
+	<script type="text/javascript" src="js/gallery.js" ></script>
+	<script type="text/javascript" src="js/blog_link.js" ></script>
+	<script type="text/javascript" src="js/photo_link.js" ></script>
+	<script type="text/javascript" src="js/about_link.js" ></script>
 
 
 	<!-- local account -->
@@ -28,28 +34,37 @@
 <!--<div class="signature"></div>-->
 
 <div class="showcase_container">
-	<div class="section_links">
-	<div class="title_container">
-		Photography
+	<!--<div class="logo">
+		<img src="images/icons/watermark/logo1.png">
+	</div>-->
+
+	<div class="link_band">
+		<!--<div class="signature">
+		Steven Elleman
+		</div>-->
 	</div>
-	<div class="title_container">
-				Drawing
-			</div>
-	<div class="title_container">
-				Sculpture
-			</div>
-	<div class="title_container">
-				Blog
-			</div>
-	<div class="title_container">
-				Projects
-			</div>
-	<div class="title_container">
-				About
-			</div>
-	<div class="title_container">
-				Contact
-			</div>
+	<div class="section_links">
+		<div class="title_container current" id="Photography_link">
+			Photography
+		</div>
+		<div class="title_container" id="Drawing_link">
+					Drawing
+				</div>
+		<div class="title_container" id="Sculpture_link">
+					Sculpture
+				</div>
+		<div class="title_container" id="Blog_link">
+					Blog
+				</div>
+		<div class="title_container" id="Projects_link">
+					Projects
+				</div>
+		<div class="title_container" id="About_link">
+					About
+				</div>
+		<div class="title_container" id="Contact_link">
+					Contact
+				</div>
 	</div>
 
 	<!--
@@ -63,75 +78,93 @@
 		
 		<div class="whitespace"></div>
 
-		<div class="current showcase" id="current" style="background-image:url(http://stevenelleman.github.io/images/showcase/showcase_yerba.jpg);">
+		<div class="showcase" id="photo" style="background-image:url(www.stevenelleman.com/pw2-images/images/showcase/showcase_yerba.jpg);">
+			<div class="showcase_title">
+				Photography
+			</div>
 			<div class="current_showcase_background">
 			</div>
 		</div>
 
 
-		<div class="showcase close" style="background-image:url(http://stevenelleman.github.io/images/showcase/showcase_holi1.jpg);">
+		<div class="showcase" id="photo" style="background-image:url(images/showcase/showcase_holi1.jpg);">
+			<div class="showcase_title">
+				Event Photography
+			</div>
 			<div class="current_showcase_background">
 			</div>
 		</div>
 
-		<div class="showcase close" style="background-image:url(http://stevenelleman.github.io/images/showcase/showcase_kaylayerba.jpg);">
+		<div class="showcase" id="photo" style="background-image:url(images/showcase/showcase_kaylagraffiti.jpg);">
+			<div class="showcase_title">
+				Model Photography
+			</div>
 			<div class="current_showcase_background">
 			</div>
 		</div>
 
-		<div class="showcase close" style="background-image:url(http://stevenelleman.github.io/images/showcase/showcase_bigsur.jpg);">
+		<div class="showcase" id="photo" style="background-image:url(images/showcase/showcase_bigsur.jpg);">
+			<div class="showcase_title">
+				Nature Photography
+			</div>
 			<div class="current_showcase_background">
 			</div>
 		</div>
 
-		<div class="showcase close" style="background-image:url(http://stevenelleman.github.io/images/showcase/showcase_holi1.jpg);">
+		<div class="showcase" id="photo" style="background-image:url(www.stevenelleman.com/pw2-images/images/showcase/showcase_rome.jpg);">
+			<div class="showcase_title">
+				Travel Photography
+			</div>
 			<div class="current_showcase_background">
 			</div>
 		</div>
 
-		<div class="showcase close" style="background-image:url(http://stevenelleman.github.io/images/showcase/showcase_shugufa.jpg);">
+		<div class="showcase" style="background-image:url(images/showcase/showcase_fractals2.jpg);">
+			<div class="showcase_title">
+				Drawing
+			</div>
 			<div class="current_showcase_background">
 			</div>
 		</div>
 
-		<div class="showcase close" style="background-image:url(http://stevenelleman.github.io/images/showcase/showcase_fractals2.jpg);">
+		<div class="showcase" style="background-image:url(images/showcase/showcase_ribcage.jpg);">
+			<div class="showcase_title" style="">
+				Sculpture
+			</div>
 			<div class="current_showcase_background">
 			</div>
 		</div>
 
-		<div class="showcase close" style="background-image:url(http://stevenelleman.github.io/images/showcase/showcase_ribcage.jpg);">
+		<div class="showcase" style="background-image:url(images/showcase/showcase_pasternoster.jpg);">
+			<div class="showcase_title">
+				Blog
+			</div>
 			<div class="current_showcase_background">
 			</div>
 		</div>
 
-		<div class="showcase close" style="background-image:url(http://stevenelleman.github.io/images/showcase/showcase_sather.jpg);">
+		<div class="showcase" style="background-image:url(images/showcase/showcase_printwork.jpg);">
+			<div class="showcase_title">
+				Projects
+			</div>
 			<div class="current_showcase_background">
 			</div>
 		</div>
 
-		<div class="showcase close" style="background-image:url(http://stevenelleman.github.io/images/showcase/showcase_fire.jpg);">
+		<div class="showcase" style="background-image:url(images/showcase/showcase_selfie2.jpg);">
+			<div class="showcase_title">
+				About
+			</div>
 			<div class="current_showcase_background">
 			</div>
 		</div>
 
-		<div class="showcase close" style="background-image:url(http://stevenelleman.github.io/images/showcase/showcase_selfie2.jpg);">
+		<div class="showcase" style="background-image:url(images/showcase/showcase_palacearts.jpg);">
+			<div class="showcase_title">
+				Contact
+			</div>
 			<div class="current_showcase_background">
 			</div>
-		</div>
-	</div>
-
-	<div class="link_container">
-		<div class="link" id="link_about">
-		</div>
-		<div class="link" id="link_photo">
-		</div>
-		<div class="link" id="link_sculpture">
-		</div>
-		<div class="link" id="link_graphics">
-		</div>
-		<div class="link" id="link_blog">
-		</div>
-		<div class="link" id="link_projects">
 		</div>
 	</div>
 
@@ -156,47 +189,53 @@
 </div>
 
 <div class="content_page">
+	<div class="exit">
+		<img src="images/icons/arrows/arrow.png">
+	</div>
+	<div class="contents">
+	</div>
+</div>
 
-<div class="galleries">
-<div class="links" id="link_box">	
-</div>
-</div>
+	<div class="galleries">
+	<div class="links" id="link_box">	
+	</div>
+	</div>
 <div class="footer_container">
-<div class="footer_inner_container">
-<div class="footer_link">
-<img class="footer_img" src="images/icons/company_icons/medium.png">
-</div>
-<div class="footer_link">
-<a href="https://github.com/selleman">
-<img class="footer_img" src="images/icons/company_icons/github.png">
-</a>
-</div>
-<div class="footer_link">
-<a href="mailto:selleman@berkeley.edu">
-<img class="footer_img" src="images/icons/company_icons/google.png">
-</a>
-</div>
-<div class="watermark">
-	<img class="watermark_img" src="images/icons/type_icons/name.png"> 
-</div>
-<div class="footer_link">
-<a href="https://instagram.com/steven.elleman/">
-<img class="footer_img" src="images/icons/company_icons/instagram.png">
-</a>
-</div>
-<div class="footer_link">
-<a href="https://www.linkedin.com/profile/view?id=383561216&amp;authType=NAME_SEARCH&amp;authToken=dRLq&amp;locale=en_US&amp;srchid=3835612161435447317621&amp;srchindex=1&amp;srchtotal=2&amp;trk=vsrp_people_res_name&amp;trkInfo=VSRPsearchId%3A3835612161435447317621%2CVSRPtargetId%3A383561216%2CVSRPcmpt%3Aprimary%2CVSRPnm%3Atrue">
-<img class="footer_img" src="images/icons/company_icons/linkedin.png">
-</a>
-</div>
-<div class="footer_link">
-<a href="https://www.facebook.com/steven.elleman">
-<img class="footer_img" src="images/icons/company_icons/facebook.png">
-</a>
-</div>
-</div>
-<div class="copyright">&copy; 2016 Icons and Site Designed by Steven Elleman
-</div>
+	<div class="footer_inner_container">
+		<div class="footer_link">
+		<img class="footer_img" src="images/icons/company_icons/medium.png">
+		</div>
+		<div class="footer_link">
+			<a href="https://github.com/selleman">
+			<img class="footer_img" src="images/icons/company_icons/github.png">
+			</a>
+		</div>
+		<div class="footer_link">
+		<a href="mailto:selleman@berkeley.edu">
+		<img class="footer_img" src="images/icons/company_icons/google.png">
+		</a>
+		</div>
+		<div class="watermark">
+			<img class="watermark_img" src="images/icons/type_icons/name.png"> 
+		</div>
+		<div class="footer_link">
+		<a href="https://instagram.com/steven.elleman/">
+		<img class="footer_img" src="images/icons/company_icons/instagram.png">
+		</a>
+		</div>
+		<div class="footer_link">
+		<a href="https://www.linkedin.com/profile/view?id=383561216&amp;authType=NAME_SEARCH&amp;authToken=dRLq&amp;locale=en_US&amp;srchid=3835612161435447317621&amp;srchindex=1&amp;srchtotal=2&amp;trk=vsrp_people_res_name&amp;trkInfo=VSRPsearchId%3A3835612161435447317621%2CVSRPtargetId%3A383561216%2CVSRPcmpt%3Aprimary%2CVSRPnm%3Atrue">
+		<img class="footer_img" src="images/icons/company_icons/linkedin.png">
+		</a>
+		</div>
+		<div class="footer_link">
+		<a href="https://www.facebook.com/steven.elleman">
+		<img class="footer_img" src="images/icons/company_icons/facebook.png">
+		</a>
+		</div>
+	</div>
+	<div class="copyright">&copy; 2016 Icons and Site Designed by Steven Elleman
+	</div>
 </div>
 </body>
 </html>

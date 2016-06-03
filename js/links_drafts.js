@@ -241,3 +241,229 @@ $(document).ready(function(){
 });
 
 */
+
+
+/*
+	var current_id = $(this).attr('id');
+	var photo = '#Photography_link';
+	var drawing = '#Drawing_link';
+	var sculpture = '#Sculpture_link';
+	var blog = '#Blog_link';
+	var project = '#Projects_link';
+	var about = '#About_link';
+	var contact = '#Contact_link';
+	
+	if (current_id === photo) {
+		$.each(photo_links, function(index, element){
+
+			/* Process fields */
+			var link_address = $(element)[0];
+			var link_name = $(element)[1];
+			var link_date = $(element)[2];
+			var link_type = $(element)[3];
+			var final_address = "http://stevenelleman.github.io/images/image_links/photo/"+link_address+".jpg";
+			var final_type = link_type + "_photo";
+
+			/* Make Link Elements */
+			var container = $("<div/>").addClass("link_img").attr("id", link_id);
+			var name = $("<div/>").addClass("link_name").text(link_name);
+			var date = $("<div/>").addClass("date_loc").text(link_date);
+			var type = $("<div/>").addClass("link_type").attr("title", link_type + " photos");
+			var img = $("<img/>").attr("src", final_address);
+			var type_img = $("<img/>").addClass("type_img").attr("src", "http://stevenelleman.github.io/images/icons/type_icons/photo_"+link_type+"_white.png");
+
+			/* Combine Elements */
+			type.append(type_img);
+			container.append(img);
+			container.append(name);
+			container.append(date);
+			container.append(type);
+			$(".links").append(container);
+		});
+	} else if (current_id === drawing) {
+		$.each(drawing_links, function(index, element){
+
+			/* Process fields */
+			var link_address = $(element)[0];
+			var link_name = $(element)[1]; 
+			var link_date = $(element)[2];
+			var link_type = $(element)[3];
+			var link_id = $(element)[0];
+			var link_classes = $(element)[4];
+			var final_address = "http://stevenelleman.github.io/images/image_links/photo/"+link_address+".jpg";
+			var final_type = link_type + "_drawing";
+
+			/* Make Link Elements */
+			var container = $("<div/>").addClass("link_img").attr("id", link_id);
+			var name = $("<div/>").addClass("link_name").text(link_name);
+			var date = $("<div/>").addClass("date_loc").text(link_date);
+			var type = $("<div/>").addClass("link_type").attr("title", link_type + " photos");
+			var img = $("<img/>").attr("src", final_address);
+			var type_img = $("<img/>").addClass("type_img").attr("src", "http://stevenelleman.github.io/images/icons/type_icons/photo_"+link_type+"_white.png");
+
+			/* Combine Elements */
+			type.append(type_img);
+			container.append(img);
+			container.append(name);
+			container.append(date);
+			container.append(type);
+			$(".links").append(container);
+		});
+	} else if (current_id === sculpture) {
+		
+	} else if (current_id === blog) {
+		
+	} else if (current_id === project) {
+		
+	} else if (current_id === about) {
+		
+	} else if (current_id === contact) {
+		
+	}
+});
+
+
+/* Blog and Project */
+/* ["photo_address", "title", "date", "type"] */
+function loadBlog(index, element){
+	var link_address = $(element)[0];
+	var link_name = $(element)[1];
+	var link_date = $(element)[2];
+	var link_type = $(element)[3];
+	var final_address = "images/image_links/photo/"+link_address+".jpg";
+	
+	/* Make Elements */
+	var container = $("<div/>").addClass(".blog_container").attr("id");
+	var img = $("<img/>").attr("src", final_address);
+	var name = $("<div/>").addClass(".about_name").text(link_name);
+	var arrow_down = $("<div/>").addClass(".about_arrow").attr("id", "#about_arrow");
+	var arrow_down_img = $("<img/").attr("src", "");
+	var contents = $("<div/>").text(link_contents); /*contents display none, until #about_arrow click*/
+
+	/* Combine elements */
+	container.append(img);
+	container.append(name);
+	arrow_down.append(arrow_down_img);
+	container.append(arrow_down);
+	container.append(contents);
+	$(".links").append(container);
+}
+
+/* Drawing and Sculpture */
+/* ["photo_address", "title", "date", "type", "classes"] */
+function loadMason(index, element){
+	
+}
+/* About */
+/* ["photo_address", "title", "contents"] */
+function loadAbout(index, element) {
+	var link_address = $(element)[0];
+	var link_name = $(element)[1];
+	var link_contents = $(element)[2];
+	var final_address = "images/image_links/photo/"+link_address+".jpg";
+	
+	/* Make Elements */
+	var container = $("<div/>").addClass(".about_banner");
+	var img = $("<img/>").attr("src", final_address);
+	var name = $("<div/>").addClass(".about_name").text(link_name);
+	var arrow_down = $("<div/>").addClass(".about_arrow").attr("id", "#about_arrow");
+	var arrow_down_img = $("<img/").attr("src", "");
+	var contents = $("<div/>").text(link_contents); /*contents display none, until #about_arrow click*/
+
+	/* Combine elements */
+	container.append(img);
+	container.append(name);
+	arrow_down.append(arrow_down_img);
+	container.append(arrow_down);
+	container.append(contents);
+	$(".links").append(container);
+}
+
+/* Contact */
+function loadContact() {
+
+}
+
+function loadPhotography(index, element){
+			/* Process fields */
+			var link_address = $(element)[0];
+			var link_name = $(element)[1];
+			var link_date = $(element)[2];
+			var link_type = $(element)[3];
+			var final_address = "images/image_links/photo/"+link_address+".jpg";
+			var final_type = link_type + "_photo";
+
+			/* Make Link Elements */
+			var container = $("<div/>").addClass(".photo_container").attr("id", link_id); /*make photo_container */
+			var name = $("<div/>").addClass(".link_name").text(link_name);
+			var date = $("<div/>").addClass(".date_loc").text(link_date);
+			var type = $("<div/>").addClass(".link_type").attr("title", link_type + " photos");
+			var img = $("<img/>").attr("src", final_address);
+			var type_img = $("<img/>").addClass("type_img").attr("src", "http://stevenelleman.github.io/images/icons/type_icons/photo_"+link_type+"_white.png");
+
+			/* Combine Elements */
+			type.append(type_img);
+			container.append(img);
+			container.append(name);
+			container.append(date);
+			container.append(type);
+			$(".links").append(container);
+		}
+
+
+/* Photography */
+function loadPhotography(index, element){
+			/* Process fields */
+			var link_address = $(element)[0];
+			var link_name = $(element)[1];
+			var link_date = $(element)[2];
+			var link_type = $(element)[3];
+			var final_address = "images/image_links/photo/"+link_address+".jpg";
+			var final_type = link_type + "_photo";
+
+			/* Make Link Elements */
+			var container = $("<div/>").addClass("photo_container").attr("id", link_address); /*make photo_container */
+			var name = $("<div/>").addClass("link_name").text(link_name);
+			var date = $("<div/>").addClass("date_loc").text(link_date);
+			var type = $("<div/>").addClass("link_type").attr("title", link_type + " photos");
+			var img = $("<img/>").attr("src", final_address);
+			var type_img = $("<img/>").addClass("type_img").attr("src", "http://stevenelleman.github.io/images/icons/type_icons/photo_"+link_type+"_white.png");
+
+			/* Combine Elements */
+			type.append(type_img);
+			container.append(img);
+			container.append(name);
+			container.append(date);
+			container.append(type);
+			$(".links").append(container);
+		}
+
+
+	/*
+$(document).ready(function(){
+	$(".showcase_container").click(function(){
+		var photo = $('#Photography_link');
+		var drawing = $('#Drawing_link');
+		var sculpture = $('#Sculpture_link');
+		var blog = $('#Blog_link');
+		var project = $('#Projects_link');
+		var about = $('#About_link');
+		var contact = $('#Contact_link');
+		if (photo.hasClass("current")) {
+			$.each(photo_links, loadPhotography(index, element));
+		} else if (drawing.hasClass("current")) {
+			$.each(drawing_links, loadMason(index, element));
+		} else if (sculpture.hasClass("current")) {
+			$.each(sculpture_links, loadMason(index, element));
+		} else if (blog.hasClass("current")) {
+			$.each(blog_links, loadBlog(index, element));
+		} else if (project.hasClass("current")) {
+			$.each(project_links, loadBlog(index, element));
+		} else if (about.hasClass("current")) {
+			$.each(project_links, loadBlog(index, element));
+		} else if (contact.hasClass("current")) {
+
+		}
+	});
+});
+*/
