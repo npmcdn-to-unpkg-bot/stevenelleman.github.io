@@ -2,73 +2,12 @@
 
 var window_width = $(window).width();
 
+/*
 $(document).ready(function() {
 	$("#downArrow").on("click", function() {
 		$("links").css('display', 'block');
 	});
-});
-
-
-function openLinks() {
-	document.getElementById('link_box').style.display = 'block';
-	document.getElementById('upArrow').style.display = 'block';
-	document.getElementById('downArrow').style.display = 'none';
-	
-}
-
-function closeLinks() {
-	document.getElementById('link_box').style.display = 'none';
-	document.getElementById('downArrow').style.display = 'block';
-	document.getElementById('upArrow').style.display = 'none';
-}
-
-
-/*
-$(document).ready(function(){
-	$('#Photography_link').click(function(){
-		$('.section_links').children().each(function(){$(this).removeClass('current');});
-		$( '#allShowcases' ).css('left', '0%');
-		$('#Photography_link').addClass('current');
-		current_section = '#Photography_link';
-	});
-	$('#Drawing_link').click(function(){
-		$('.section_links').children().each(function(){$(this).removeClass('current')});
-		$( '#allShowcases' ).css('left', '-500%');
-		$('#Drawing_link').addClass('current');
-		current_section = '#Drawing_link';
-	});
-	$('#Sculpture_link').click(function(){
-		$('.section_links').children().each(function(){$(this).removeClass('current')});
-		$( '#allShowcases' ).css('left', '-600%');
-		$('#Sculpture_link').addClass('current');
-		current_section = '#Sculpture_link';
-	});
-	$('#Blog_link').click(function(){
-		$('.section_links').children().each(function(){$(this).removeClass('current')});
-		$( '#allShowcases' ).css('left', '-700%');
-		$('#Blog_link').addClass('current');
-		current_section = '#Blog_link';
-	});
-	$('#Projects_link').click(function(){
-		$('.section_links').children().each(function(){$(this).removeClass('current')});
-		$( '#allShowcases' ).css('left', '-800%');
-		$('#Projects_link').addClass('current');
-		current_section = '#Projects_link';
-	});
-	$('#About_link').click(function(){
-		$('.section_links').children().each(function(){$(this).removeClass('current')});
-		$( '#allShowcases' ).css('left', '-900%');
-		$('#About_link').addClass('current');
-		current_section = '#About_link';
-	});
-	$('#Contact_link').click(function(){
-		$('.section_links').children().each(function(){$(this).removeClass('current')});
-		$( '#allShowcases' ).css('left', '-1000%');
-		$('#Contact_link').addClass('current');
-		current_section = '#Contact_link';
-	});
-});
-*/
+});*/
 
 
 $(document).ready(function(){

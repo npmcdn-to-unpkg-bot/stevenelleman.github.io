@@ -4,7 +4,7 @@ function loadAbout(index, element) {
 	var link_address = $(element)[0];
 	var link_name = $(element)[1];
 	var link_contents = $(element)[2];
-	var final_address = "images/image_links/about/"+link_address+".jpg";
+	var final_address = "http://www.stevenelleman.com/pw2-images/images/image_links/about/"+link_address+".jpg";
 	
 	/* Make Elements */
 	var container = $("<div/>").addClass("about_banner");
@@ -13,7 +13,7 @@ function loadAbout(index, element) {
 	var id = $("#"+link_address);
 	var name = $("<div/>").addClass("about_name").text(link_name);
 	var arrow_down = $("<div/>").addClass("about_arrow").attr("id", "#about_arrow");
-	var arrow_down_img = $("<img/>").attr("src", "images/icons/arrows/arrow.png");
+	var arrow_down_img = $("<img/>").attr("src", "http://www.stevenelleman.com/pw2-images/images/icons/arrows/arrow.png");
 	var contents = $("<div/>").text(link_contents).addClass("about_contents");
 	container.append(name);
 	arrow_down.append(arrow_down_img);
