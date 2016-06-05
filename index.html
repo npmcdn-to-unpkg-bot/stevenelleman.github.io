@@ -11,10 +11,11 @@
 	<link rel="stylesheet" type="text/css" href="css/blog_link.css">
 	
 	<!--<script type="text/javascript" src="js/image_link.js" ></script>-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-	<script src="http://imagesloaded.desandro.com/imagesloaded.pkgd.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script type="text/javascript" src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
 	<script type="text/javascript" src="js/showcase.js" ></script>
 	<script type="text/javascript" src="js/masonry.pkgd.min.js" ></script>
+	<script type="text/javascript" src="js/masonry.js" ></script>
 	<script type="text/javascript" src="fields/data.js" ></script>
 	<script type="text/javascript" src="js/links.js" ></script>
 	<script type="text/javascript" src="js/gallery.js" ></script>
@@ -27,8 +28,13 @@
 
 	<!-- local account -->
 <script>
-
-
+		var $grid = $('.grid').imagesLoaded( function() {
+		  	$grid.masonry({
+		    itemSelector: '.grid-item',
+		    percentPosition: true,
+		    columnWidth: '.grid-sizer'
+		  }); 
+		});
 </script>
 </head>
 
@@ -199,6 +205,113 @@
 </div>
 
 	<div class="galleries">
+		<div class="grid" id="link_box" style="display:none;">
+			<div class="grid-sizer"></div>
+			<div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/drawing/drawing_1.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/drawing/drawing_2.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/drawing/drawing_3.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/drawing/drawing_4.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/drawing/drawing_5.jpg"/>
+			</div><div class="grid-item" style="width:66.66%;">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/drawing/drawing_6.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/drawing/drawing_7.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/drawing/drawing_8.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/drawing/drawing_9.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/drawing/drawing_10.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/drawing/drawing_11.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/drawing/drawing_12.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/drawing/drawing_13.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/drawing/drawing_14.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/drawing/drawing_15.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/drawing/drawing_16.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/drawing/drawing_17.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/drawing/drawing_18.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/drawing/drawing_19.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/drawing/drawing_20.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/drawing/drawing_21.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/drawing/drawing_22.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/drawing/drawing_23.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/drawing/drawing_24.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/drawing/drawing_25.jpg"/>
+			</div><div class="grid-item" style="width:66.66%;">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/drawing/drawing_26.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/drawing/drawing_27.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/drawing/drawing_28.jpg"/>
+			</div>
+		</div>
+		
+		<div class="grid" id="link_box" style="display:none;">
+			<div class="grid-sizer"></div>
+			<div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/sculpture/sculpture_10.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/sculpture/sculpture_2.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/sculpture/sculpture_3.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/sculpture/sculpture_4.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/sculpture/sculpture_5.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/sculpture/sculpture_6.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/sculpture/sculpture_7.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/sculpture/sculpture_1.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/sculpture/sculpture_8.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/sculpture/sculpture_9.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/sculpture/sculpture_11.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/sculpture/sculpture_12.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/sculpture/sculpture_14.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/sculpture/sculpture_15.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/sculpture/sculpture_16.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/sculpture/sculpture_17.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/sculpture/sculpture_18.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/sculpture/sculpture_19.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/sculpture/sculpture_20.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/sculpture/sculpture_21.jpg"/>
+			</div><div class="grid-item">
+				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/sculpture/sculpture_13.jpg"/>
+			</div>
+		</div>
 	<div class="links" id="link_box">	
 	</div>
 	</div>

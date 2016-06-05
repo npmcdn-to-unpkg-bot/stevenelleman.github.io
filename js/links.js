@@ -128,31 +128,38 @@ $(document).ready(function(){
 			});
 		} else if (drawing.hasClass("current")) {
 			$(".links").empty();
-			var grid = $('.grid').imagesLoaded( function() {
+			/*var grid = $('.grid').imagesLoaded(function() {
 				  grid.masonry({
 				    itemSelector: '.grid-item',
 				    percentPosition: true,
 				    columnWidth: '.grid-sizer'
 				  }); 
-				});
-			var grid2 = $("<div/>").addClass("grid");
-			var size = $("<div/>").addClass("grid-sizer");
-			grid.append(size);
-			grid2.append(size);
-			$.each(drawing_links, function(index, element){
+				});*/
+			/*var grid2 = $("<div/>").addClass("grid");*/
+			/*var size = $("<div/>").addClass("grid-sizer");
+			grid.append(size);*/
+			/*grid2.append(size);*/
+			/*$.each(drawing_links, function(index, element){
 				console.log("Drawing loop")
 				var box = loadMason(index,element);
 				grid.append(box);
-				grid2.append(box);
-			});
-			console.log("out of loop");
-			$(".links").append(grid);
-			$(".links").append(grid2);
+				/*grid2.append(box);*/
+			
+			/*$.get("html/drawing.html", function(data){
+    			$(".links").children("div:first").html(data);
+			});*/
+
+			/*$.get('html/drawing.html').success(function(data) {
+     			$('.links').html(data);
+ 			});*/
+			$("#drawing_grid").css("display", "block");
 		} else if (sculpture.hasClass("current")) {
 			$(".links").empty();
+			/*
 			$.each(sculpture_links, function(index, element){
 				loadMason(index,element);
-			});
+			});*/
+			$("#sculpture_grid").css("display", "block");
 		} else if (blog.hasClass("current")) {
 			$(".links").empty();
 			$.each(blog_links, function(index, element){
