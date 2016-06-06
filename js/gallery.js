@@ -73,19 +73,17 @@ function populateBlogpage(id) {
 	content_page.attr("display", "block");
 }
 
+/*
 function populateDrawingpage(id) {
 	var id = id.attr("id");
 	var content_container = $(".contents");
 	var banner = $("<div/>").addClass(".contents_banner");
 	var title = $("<div/>").addClass(".contents_title");
 	var date = $("<div/>").addClass(".contents_date");
-	/*figure out method to get images from id, dictionary with images, use for loop */
-
-	/*display */
 	var content_page = $(".content_page");
 	content_page.append(content_container);
 	content_page.attr("display", "block");
-}
+}*/
 
 function populateSculpturepage(id) {
 	var id = id.attr("id");

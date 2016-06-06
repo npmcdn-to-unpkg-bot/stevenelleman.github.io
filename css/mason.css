@@ -1,6 +1,3 @@
-
-
-
 * { box-sizing: border-box; }
 
 .grid {
@@ -20,6 +17,7 @@
 .grid-item {
 	padding:2.5px;
 	float: left;
+	cursor: pointer;
 }
 
 .grid-item img {

@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="css/blog_format.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
-	<link rel="stylesheet" type="text/css" href="css/gallery_format.css">
-	<link rel="stylesheet" type="text/css" href="css/image_link.css">
+	<link rel="stylesheet" type="text/css" href="css/link_drawing.css">
 	<link rel="stylesheet" type="text/css" href="css/showcase.css">
 	<link rel="stylesheet" type="text/css" href="css/font.css">
-	<link rel="stylesheet" type="text/css" href="css/about_link.css">
-	<link rel="stylesheet" type="text/css" href="css/blog_link.css">
-	
-	<!--<script type="text/javascript" src="js/image_link.js" ></script>-->
+	<link rel="stylesheet" type="text/css" href="css/link_about.css">
+	<link rel="stylesheet" type="text/css" href="css/link_blog.css">
+	<link rel="stylesheet" type="text/css" href="css/mason.css">
+	<link rel="stylesheet" type="text/css" href="css/links.css">
+	<link rel="stylesheet" type="text/css" href="css/link_photo.css">
+	<link rel="stylesheet" type="text/css" href="css/content_page.css">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<script type="text/javascript" src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
-	<script type="text/javascript" src="js/showcase.js" ></script>
+	<script src="http://imagesloaded.desandro.com/imagesloaded.pkgd.js"></script>
+	
 	<script type="text/javascript" src="js/masonry.pkgd.min.js" ></script>
+	<script type="text/javascript" src="js/showcase.js" ></script>
 	<script type="text/javascript" src="js/masonry.js" ></script>
 	<script type="text/javascript" src="fields/data.js" ></script>
 	<script type="text/javascript" src="js/links.js" ></script>
 	<script type="text/javascript" src="js/gallery.js" ></script>
-	<script type="text/javascript" src="js/blog_link.js" ></script>
 	<script type="text/javascript" src="js/blog_content.js" ></script>
-	<script type="text/javascript" src="js/photo_link.js" ></script>
-	<script type="text/javascript" src="js/about_link.js" ></script>
-	<script type="text/javascript" src="js/drawing_link.js" ></script>
-
+	<script type="text/javascript" src="js/link_photo.js" ></script>
+	<script type="text/javascript" src="js/link_about.js" ></script>
+	<script type="text/javascript" src="js/link_drawing.js" ></script>
+	<script type="text/javascript" src="js/link_blog.js" ></script>
 
 	<!-- local account -->
+
 <script>
+	/*$(document).on("load", function(){
 		var $grid = $('.grid').imagesLoaded( function() {
 		  	$grid.masonry({
 		    itemSelector: '.grid-item',
@@ -35,7 +40,59 @@
 		    columnWidth: '.grid-sizer'
 		  }); 
 		});
+	});
+
+	$(".grid").on("load", function(){
+		var $grid = $('.grid').imagesLoaded( function() {
+		  	$grid.masonry({
+		    itemSelector: '.grid-item',
+		    percentPosition: true,
+		    columnWidth: '.grid-sizer'
+		  }); 
+		});
+	});*/
+
+	/*$(document).ready(function() {
+		$('.grid').masonry({
+		    citemSelector: '.grid-item',
+		    percentPosition: true,
+		    columnWidth: '.grid-sizer'
+		}).imagesLoaded(function() {
+		    $('.grid').masonry('load');
+		});
+	});*/
+
+	$(document).ready(function() {
+		$('.grid').masonry({
+		    citemSelector: '.grid-item',
+		    percentPosition: true,
+		    columnWidth: '.grid-sizer'
+		});
+	});
+
+	/*$(document).on("load", function() {
+		$('.grid').masonry({
+		    citemSelector: '.grid-item',
+		    percentPosition: true,
+		    columnWidth: '.grid-sizer'
+		}).imagesLoaded(function() {
+		    $('.grid').masonry('reload');
+		});
+	});
+
+	$(document).on("resize", function() {
+		$('.grid').masonry({
+		    citemSelector: '.grid-item',
+		    percentPosition: true,
+		    columnWidth: '.grid-sizer'
+		}).imagesLoaded(function() {
+		    $('.grid').masonry('reload');
+		});
+	});*/
+
+
 </script>
+
 </head>
 
 <body>
@@ -93,7 +150,6 @@
 			<div class="current_showcase_background">
 			</div>
 		</div>
-
 
 		<div class="showcase" id="photo" style="background-image:url(http://www.stevenelleman.com/pw2-images/images/showcase/showcase_holi1.jpg);">
 			<div class="showcase_title">
@@ -168,19 +224,30 @@
 		</div>
 
 		<div class="showcase" style="background-image:url(http://www.stevenelleman.com/pw2-images/images/showcase/showcase_palacearts.jpg);">
-			<div class="showcase_title">
-				Contact
+			<div class="contact_box">
+				<div class="contact_form">
+				<form action="MAILTO:selleman@berkeley.edu.com" method="post" enctype="text/plain">
+				<input type="text" name="name" placeholder="Name"><br>
+				<input type="text" name="mail" placeholder="Your E-Mail"><br>
+				<textarea type="text" name="comment" placeholder="Message" size="100" wrap="hard"></textarea
+
+					<br><br>
+				<input type="submit" value="Send">
+				<input type="reset" value="Reset">
+				</form>
+			</div>
+
 			</div>
 			<div class="current_showcase_background">
 			</div>
 		</div>
 	</div>
 
-	<div class="showcase_arrow_left" id="leftArrow">
+	<div class="showcase_arrow_left" id="leftArrow" onclick="closeLinks()">
 		<img src="images/icons/arrows/arrow.png">
 	</div>
 	
-	<div class="showcase_arrow_right" id="rightArrow">
+	<div class="showcase_arrow_right" id="rightArrow" onclick="closeLinks()">
 		<img src="images/icons/arrows/arrow.png">
 	</div>
 
@@ -198,14 +265,36 @@
 
 <div class="content_page">
 	<div class="exit">
-		<img src="images/icons/arrows/arrow.png">
+		<img src="images/icons/x.png">
 	</div>
 	<div class="contents">
 	</div>
 </div>
 
+
 	<div class="galleries">
-		<div class="grid" id="link_box" style="display:none;">
+
+		<script>
+			$("#downArrow").click(function(){
+				if ($('#Sculpture_link').hasClass("current")) {
+					$("#grid_sculpture").css("display", "block");
+					$('.grid').masonry({
+					    citemSelector: '.grid-item',
+					    percentPosition: true,
+					    columnWidth: '.grid-sizer'
+					});
+				} else if ($('#Drawing_link').hasClass("current")) {
+					$("#grid_drawing").css("display", "block");
+					$('.grid').masonry({
+					    citemSelector: '.grid-item',
+					    percentPosition: true,
+					    columnWidth: '.grid-sizer'
+					});
+				}
+			})
+		</script>
+
+		<div class="grid" id="grid_drawing" style="display:none;">
 			<div class="grid-sizer"></div>
 			<div class="grid-item">
 				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/drawing/drawing_1.jpg"/>
@@ -266,7 +355,7 @@
 			</div>
 		</div>
 		
-		<div class="grid" id="link_box" style="display:none;">
+		<div class="grid" id="grid_sculpture" style="display:none;">
 			<div class="grid-sizer"></div>
 			<div class="grid-item">
 				<img src="http://www.stevenelleman.com/pw2-images/images/image_links/sculpture/sculpture_10.jpg"/>

@@ -5,7 +5,6 @@ function loadBlog(index, element){
 	var link_address = $(element)[0];
 	var link_name = $(element)[1];
 	var link_date = $(element)[2];
-	/*var link_contents = $(element)[3][0];*/
 	var final_address = "http://www.stevenelleman.com/pw2-images/images/image_links/blog/"+link_address+".jpg";
 	var container = $("<div/>").addClass("banner_container");
 	var banner_container = $("<div/>").addClass("blog_banner");
@@ -18,7 +17,6 @@ function loadBlog(index, element){
 	var arrow_img = $("<img/>").attr("src", "http://www.stevenelleman.com/pw2-images/images/icons/arrows/arrow.png");
 
 	var contents = $("<div/>").text(link_contents).addClass(".blog_contents");
-	/*contents.attr("id", link_address + "_contents");*/
 	contents.css("display", "none"); /*contents display none, until #about_arrow click*/
 	
 	banner_container.append(name);
