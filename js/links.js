@@ -25,6 +25,84 @@ $(document).ready(function(){
 	});
 });
 
+function loadBlog(index, element){
+	var link_address = $(element)[0];
+	var link_name = $(element)[1];
+	var link_date = $(element)[2];
+	var link_content = $(element)[3];
+	var container = $("<div/>").addClass("blog_container blog_collapsed").attr("onclick", "openBlog(this)");
+	var header = $("<div/>").addClass("blog_header");
+	var title = $("<div/>").addClass("blog_title");
+	var date = $("<div/>").addClass("blog_date");
+	var content = $("<div/>").addClass("blog_content");
+	var footer = $("<div/>").addClass("blog_footer blog_collapsed");
+	title.text(link_name);
+	date.text(link_date);
+	header.append(title);
+	header.append(date);
+	container.append(header);
+	content.append(link_content);
+	container.append(content)
+	container.append(footer);
+	$(".links").append(container);
+}
+
+/*
+<div class="showcase_arrow_down" id="downArrow" onclick="openLinks();" style="display: block;">
+		<div class="gallery_title"> Galleries </div>
+		<img src="images/icons/arrows/arrow.png">
+	</div>
+	*/
+
+/*function openBlog(curr) {
+	if (curr.hasClass("blog_collapsed blog_container")){
+		console.log("fuck this shit")
+		curr.find(".blog_footer").removeClass("blog_collapsed");
+		curr.removeClass("blog_collapsed");
+	} else if (curr.hasClass("blog_container")) {
+		console.log("this too")
+		curr.find(".blog_footer").addClass("blog_collapsed");
+		curr.removeClass("blog_collapsed");
+	}
+}
+
+$(".blog_container").click(function(){
+	curr = $(this).click();
+	if (curr.hasClass("blog_collapsed blog_container")){
+		console.log("fuck this shit")
+		curr.find(".blog_footer").removeClass("blog_collapsed");
+		curr.removeClass("blog_collapsed");
+	} else if (curr.hasClass("blog_container")) {
+		console.log("this too")
+		curr.find(".blog_footer").addClass("blog_collapsed");
+		curr.removeClass("blog_collapsed");
+	}
+})*/
+
+function openBlog(e) {
+	if ($(e).hasClass("blog_collapsed") && $(e).hasClass("blog_container")) {
+		console.log("2")
+		$(e).find(".blog_footer").removeClass("blog_collapsed");
+		$(e).removeClass("blog_collapsed");
+		$(e).attr("onclick", "closeBlog(this)");
+		$(e).find(".blog_footer").attr("onclick", "closeFooter(this)");
+	}
+}
+
+function closeBlog(e) {
+	console.log(e)
+	$(e).closest(".blog_footer").addClass("blog_collapsed");
+	$(e).closest(".blog_container").addClass("blog_collapsed");
+	$(e).closest(".blog_container").attr("onclick", "openBlog(this)");
+}
+
+function closeFooter(e) {
+	$(e).addClass("blog_collapsed");
+}
+
+
+
+
 /* For links, also for gallery change */
 var current_section = '#Photography_link';
 /* Automatically load links */

@@ -1,0 +1,175 @@
+/* Blog links */
+
+.blog_container{
+    float: left;
+    width: auto;
+    background:white;
+    margin:0 auto;
+    font-family: "Elegant-Lux";
+    font-size: 2em;
+    color: black;
+    text-align: left;
+    border-radius: 5px;
+    border-color: black;
+    border-width: 0.1em;
+    border-style: solid;
+    width: 100%;
+    float: left;
+    border-width: 2px;
+    margin: 1px;
+}
+
+.blog_header{
+  background:url('images/icons/arrows/arrow_up.png') no-repeat;
+  background-position:center 8px;
+  background-size: 40px;
+  cursor:pointer;
+  height: 50px;
+}
+
+.blog_date {
+    margin-right: 2em;
+    margin-top: 0.8em;
+    right: 2em;
+    font-size: 20px;
+    font-family: mohave;
+    position: absolute;
+}
+
+.blog_title {
+    margin-left: 2em;
+    margin-top: 0.8em;
+    left: 2em;
+    font-size: 20px;
+    font-family: mohave;
+    position: absolute;
+}
+
+.blog_collapsed .blog_header{
+  background-image:url('images/icons/arrows/arrow_down.png');
+  
+}
+
+.blog_collapsed .blog_footer {
+    height: 0px;
+     background-image:url('images/icons/arrows/arrow_down.png');
+}
+
+.blog_footer {
+    background:url('images/icons/arrows/arrow_up.png') no-repeat;
+    background-position:center 0px;
+    background-size: 40px;
+    cursor:pointer;
+    height: 50px;
+}
+
+.blog_content{
+    margin: 4px;
+    white-space: normal;
+    overflow: hidden;
+    font-size: 20px;
+    transition: all 0.3s linear;
+  -webkit-transition:all 0.3s linear;
+  -moz-transition:all 0.3s linear;
+  -ms-transition:all 0.3s linear;
+  -o-transition:all 0.3s linear;
+}
+
+.blog_collapsed .blog_content{
+  min-height:0px;
+  height:0px;
+}
+
+.blog_break {
+    height: 5px;
+}
+
+
+
+
+
+
+
+
+/*
+.blog_banner {
+    width: 33%;
+    float: left;
+    height: 225px;
+    background-position: 50% 50%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+    margin: 1.5px;
+}*/
+
+/*.about_banner img {
+    position: absolute;
+    width: 100%;
+    background-position: 50% 50%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}*/
+
+/*
+.blog_name {
+    font-family: "Ailerons";
+    color: white;
+    text-align: center;
+    background-color: rgba(0,0,0, 0.5);
+    font-size: 25px;
+    white-space: normal;
+    bottom: 40%;
+    width: 100%;
+}
+.blog_date {
+
+}
+
+.blog_arrow_down {
+    width: 100%;
+    text-align: center;
+    bottom: 0%;
+    background-color: rgba(0,0,0, 0.5);
+}
+.blog_arrow_down img{
+    height: 40px;
+    -ms-transform: rotate(-90deg);*/ /* IE 9 */
+    /*-webkit-transform: rotate(-90deg);*/ /* Safari */
+    /*transform: rotate(-90deg);
+}
+
+.blog_arrow_up {
+    width: 100%;
+    text-align: center;
+    bottom: 0%;
+    background-color: rgba(0,0,0, 0.5);
+}
+.blog_arrow_up img{
+    height: 40px;
+    -ms-transform: rotate(90deg); *//* IE 9 */
+    /*-webkit-transform: rotate(90deg); /* Safari */
+    /*transform: rotate(90deg);
+}*/
+
+/*
+#about_me {
+    background-position: 50% 35%;
+}
+#about_resume {
+    background-position: 50% 37%;
+}
+#about_interests {
+    background-position: 50% 36%;
+}
+#about_travels {
+    background-position: 50% 83%;
+}
+#about_books {
+    background-position: 50% 57%;
+}
+*/
