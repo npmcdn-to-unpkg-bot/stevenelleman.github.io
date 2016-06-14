@@ -1,16 +1,16 @@
 /* Resize showcase container, footer, and controls position of galleries link */
 $(document).ready(function(){
 	$(window).on("resize", function(){
-		$(".showcase_container").height($(window).height() * 0.87);
-		$(".footer_container").height($(window).height() * 0.13);
-		$(".showcase_arrow_down").css("bottom", $(window).height() * 0.13)
+		$(".showcase_container").height($(window).height() * 0.85);
+		$(".footer_container").height($(window).height() * 0.15);
+		$(".showcase_arrow_down").css("bottom", $(window).height() * 0.15)
 	});
 });
 
 $(document).ready(function(){
-		$(".showcase_container").height($(window).height() * 0.87);
-		$(".footer_container").height($(window).height() * 0.13);
-		$(".showcase_arrow_down").css("bottom", $(window).height() * 0.13)
+		$(".showcase_container").height($(window).height() * 0.85);
+		$(".footer_container").height($(window).height() * 0.15);
+		$(".showcase_arrow_down").css("bottom", $(window).height() * 0.15)
 });
 
 $(document)
