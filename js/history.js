@@ -523,3 +523,28 @@ $(document).ready(function(){
 	});
 });
 */
+
+/*var grid = $('.grid').imagesLoaded(function() {
+				  grid.masonry({
+				    itemSelector: '.grid-item',
+				    percentPosition: true,
+				    columnWidth: '.grid-sizer'
+				  }); 
+				});*/
+			/*var grid2 = $("<div/>").addClass("grid");*/
+			/*var size = $("<div/>").addClass("grid-sizer");
+			grid.append(size);*/
+			/*grid2.append(size);*/
+			/*$.each(drawing_links, function(index, element){
+				console.log("Drawing loop")
+				var box = loadMason(index,element);
+				grid.append(box);
+				/*grid2.append(box);*/
+			
+			/*$.get("html/drawing.html", function(data){
+    			$(".links").children("div:first").html(data);
+			});*/
+
+			/*$.get('html/drawing.html').success(function(data) {
+     			$('.links').html(data);
+ 			});*/

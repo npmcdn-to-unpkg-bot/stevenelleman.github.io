@@ -1,3 +1,21 @@
+/* Resize showcase container, footer, and controls position of galleries link */
+$(document).ready(function(){
+	$(window).on("resize", function(){
+		$(".showcase_container").height($(window).height() * 0.87);
+		$(".footer_container").height($(window).height() * 0.13);
+		$(".showcase_arrow_down").css("bottom", $(window).height() * 0.13)
+	});
+});
+
+$(document).ready(function(){
+		$(".showcase_container").height($(window).height() * 0.87);
+		$(".footer_container").height($(window).height() * 0.13);
+		$(".showcase_arrow_down").css("bottom", $(window).height() * 0.13)
+});
+
+$(document)
+
+
 
 /* Open and Close links */
 
@@ -168,12 +186,18 @@ $(document).ready(function(){
 		$('#Contact_link').addClass('current');
 		current_section = '#Contact_link';
 		$(".links").empty();
-		$("#downArrow").css("display", "none");
+		console.log("got")
+		$("#downArrow").css("display", "none !important");
 		closeLinks();
 	});
 
+	if (current_section == '#Contact_link') {
+		$("#downArrow").hide();
+	}
+
 	/* load links */
 	$(".title_container").click(function(){
+		console.log('got to load links')
 		var photo = $('#Photography_link');
 		var drawing = $('#Drawing_link');
 		var sculpture = $('#Sculpture_link');
@@ -188,30 +212,7 @@ $(document).ready(function(){
 			});
 		} else if (drawing.hasClass("current")) {
 			$(".links").empty();
-			/*var grid = $('.grid').imagesLoaded(function() {
-				  grid.masonry({
-				    itemSelector: '.grid-item',
-				    percentPosition: true,
-				    columnWidth: '.grid-sizer'
-				  }); 
-				});*/
-			/*var grid2 = $("<div/>").addClass("grid");*/
-			/*var size = $("<div/>").addClass("grid-sizer");
-			grid.append(size);*/
-			/*grid2.append(size);*/
-			/*$.each(drawing_links, function(index, element){
-				console.log("Drawing loop")
-				var box = loadMason(index,element);
-				grid.append(box);
-				/*grid2.append(box);*/
 			
-			/*$.get("html/drawing.html", function(data){
-    			$(".links").children("div:first").html(data);
-			});*/
-
-			/*$.get('html/drawing.html').success(function(data) {
-     			$('.links').html(data);
- 			});*/
 			$("#drawing_grid").css("display", "block");
 		} else if (sculpture.hasClass("current")) {
 			$(".links").empty();
@@ -239,7 +240,7 @@ $(document).ready(function(){
 			});
 		} else if (contact.hasClass("current")) {
 			$(".links").empty();
-			loadContact();
+			$("#downArrow").css("display", "none");
 		}
 	});
 });

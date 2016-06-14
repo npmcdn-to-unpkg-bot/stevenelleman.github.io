@@ -3,7 +3,7 @@
 /* ["photo_address", "title", "date", "type", "classes"] */
 
 
-
+/*
 function loadMason(index, element){
 	var link_address = $(element)[0];
 	var link_name = $(element)[1];
@@ -14,4 +14,4 @@ function loadMason(index, element){
 	var grid_img = $("<img/>").attr("src", final_address);
 	grid_item.append(grid_img);
 	return grid_item;
-}
+}*/
