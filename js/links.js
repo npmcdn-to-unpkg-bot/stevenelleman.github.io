@@ -13,7 +13,11 @@ $(document).ready(function(){
 		$(".showcase_arrow_down").css("bottom", $(window).height() * 0.15)
 });
 
-$(document)
+/* Loading */
+
+$(window).load(function() {
+	$(".loader").fadeOut("slow");
+})
 
 
 
@@ -48,6 +52,7 @@ function loadBlog(index, element){
 	var link_name = $(element)[1];
 	var link_date = $(element)[2];
 	var link_content = $(element)[3];
+	console.log("got here")
 	var container = $("<div/>").addClass("blog_container blog_collapsed").attr("onclick", "openBlog(this)");
 	var header = $("<div/>").addClass("blog_header");
 	var title = $("<div/>").addClass("blog_title");

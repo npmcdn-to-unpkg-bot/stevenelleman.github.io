@@ -1,5 +1,6 @@
 body {
 	margin: 0;
+	background-color:black;
 }
 
 * {box-sizing: border-box;}
@@ -196,6 +197,7 @@ body {
 	height:100%;
 	position: relative;
 	overflow: hidden;
+	margin: -5px;
 }
 
 
