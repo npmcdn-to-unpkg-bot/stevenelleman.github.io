@@ -4,7 +4,7 @@ function loadAbout(index, element) {
 	var link_address = $(element)[0];
 	var link_name = $(element)[1];
 	var link_contents = $(element)[2];
-	var final_address = "http://www.stevenelleman.com/pw2-images/images/image_links/about/"+link_address+".jpg";
+	var final_address = "images/about/"+link_address+".jpg";
 	
 	/* Make Elements */
 	var container = $("<div/>").addClass("about_banner");
@@ -41,5 +41,5 @@ var about_links = [
 	/*d*/
 	["about_travels", "Travels"], /*50% 80% */
 	/*d*/
-	["about_books", "Reading List"] /* 50% 60% */
+	["about_philos", "Philosophy"] /* 50% 60% */
 ];
