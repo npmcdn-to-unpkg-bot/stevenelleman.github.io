@@ -1,3 +1,5 @@
+/* TODO: ADD Keypress left and right events */
+
 /* arrow */
 
 var window_width = $(window).width();
@@ -104,7 +106,7 @@ $(document).ready(function(){
 			$('#Sculpture_link').addClass('current');
 			current_section = '#Sculpture_link';
 		} else if (-6.5 < left && left < -5.5) {
-			
+
 			$( '#allShowcases' ).css('left', '-700%');
 			$('.section_links').children().each(function(){$(this).removeClass('current')});
 			$('#Blog_link').addClass('current');
@@ -135,4 +137,3 @@ $(document).ready(function(){
 		}*/
 	});
 });
-
